@@ -1,0 +1,7 @@
+f=float(input("enter fahrenheit:"))
+c=(5/9)*(f-32)
+res=round(c,2)
+print(res)
+output:
+enter fahrenheit:98.2
+36.78
