@@ -1,0 +1,10 @@
+p=int(input("enter principle:"))
+t=int(input("enter time:"))
+r=int(input("enter rate:"))
+si=(p*t*r)/100
+print(si)
+output:
+enter principle:1000
+enter time:2
+enter rate:1
+20.0
