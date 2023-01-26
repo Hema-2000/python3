@@ -51,5 +51,19 @@ ba**le
 
 
 4.mix up program
+def mix_up(s1,s2):
+    l1=len(s1)
+    l2=len(s2)
+    if(l1>=2  and  l2>=2):
+        return "'"+s2[0:2]+s1[2:]+" "+s1[0:2]+s2[2:]+"'"
+
+s1=input("enter the 1st string:")
+s2=input("enter the 2nd string:")
+print(mix_up(s1,s2))
+output:
+enter the 1st string:hema
+enter the 2nd string:latha
+'lama hetha'
+
 
 
