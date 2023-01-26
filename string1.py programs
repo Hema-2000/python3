@@ -34,4 +34,22 @@ enter the string:hemalatha
 
 
 
-3.
+3.replace() program
+def replace(s):
+    l=len(s)
+    if(l>=1):
+        return s[0]+s[1:].replace(s[0],'*')
+
+s=input("enter the string:")
+print(replace(s))
+output:
+enter the string:babble
+ba**le
+
+
+
+
+
+4.mix up program
+
+
