@@ -1,0 +1,184 @@
+1.verbing program
+def verbing(s):
+    l=len(s)
+    s1="ing"
+    if(s[-3:]==s1):
+        return s+"ly"
+    elif(l>=3):
+        return s+s1
+   
+    elif(l<3):
+        return s
+
+s=input("enter the string:")
+print(verbing(s))
+output:
+enter the string:play
+playing
+
+
+
+
+
+2.replace substring program
+def replace_sub_string(s):
+    s1=s.find('not')
+    s2=s.find('bad')
+    s3="good"
+    if(s1<s2):
+        return s.replace(s[s1:s2+3],s3)
+s=input("enter string:")
+print(replace_sub_string(s))
+output:
+enter string:movie is not that bad
+movie is good
+
+
+
+
+3.front back program
+def front_back(s1,s2):
+    l1=len(s1)
+    l2=len(s2)
+    if(l1%2==1):
+        a=(l1//2)+1
+    else:
+        a=l1//2
+    if(l2%2==1):
+        b=(l2//2)+1
+    else:
+        b=l2//2
+    s1_front=s1[:a]
+    s2_front=s2[:b]
+    s1_back=s1[a:]
+    s2_back=s2[b:]
+    return s1_front+s2_front+s1_back+s2_back
+s1=input("enter the first string:")
+s2=input("enter the 2nd string:")
+print(front_back(s1,s2))
+output:
+enter the first string:hemalatha
+enter the 2nd string:chandaka
+hemalchanathadaka
+
+
+
+
+
+merging above feunctions into isngle program:
+# D. verbing
+# Given a string, if its length is at least 3,
+# add 'ing' to its end.
+# Unless it already ends in 'ing', in which case
+# add 'ly' instead.
+# If the string length is less than 3, leave it unchanged.
+# Return the resulting string.
+def verbing(s):
+    l = len(s)
+    s1 = "ing"
+    if (s[-3:] == s1):
+        return s + "ly"
+    elif (l >= 3):
+        return s + s1
+
+    elif (l < 3):
+        return s
+
+
+# E. not_bad
+# Given a string, find the first appearance of the
+# substring 'not' and 'bad'. If the 'bad' follows
+# the 'not', replace the whole 'not'...'bad' substring
+# with 'good'.
+# Return the resulting string.
+# So 'This dinner is not that bad!' yields:
+# This dinner is good!
+def not_bad(s):
+    s1 = s.find('not')
+    s2 = s.find('bad')
+    s3 = "good"
+    if (s1 < s2):
+        return s.replace(s[s1:s2 + 3], s3)
+
+
+# F. front_back
+# Consider dividing a string into two halves.
+# If the length is even, the front and back halves are the same length.
+# If the length is odd, we'll say that the extra char goes in the front half.
+# e.g. 'abcde', the front half is 'abc', the back half 'de'.
+# Given 2 strings, a and b, return a string of the form
+#  a-front + b-front + a-back + b-back
+def front_back(s1, s2):
+    l1 = len(s1)
+    l2 = len(s2)
+    if (l1 % 2 == 1):
+        a = (l1 // 2) + 1
+    else:
+        a = l1 // 2
+    if (l2 % 2 == 1):
+        b = (l2 // 2) + 1
+    else:
+        b = l2 // 2
+    s1_front = s1[:a]
+    s2_front = s2[:b]
+    s1_back = s1[a:]
+    s2_back = s2[b:]
+    return s1_front + s2_front + s1_back + s2_back
+
+
+# Simple provided test() function used in main() to print
+# what each function returns vs. what it's supposed to return.
+def test(got, expected):
+    if got == expected:
+        prefix = ' OK '
+    else:
+        prefix = '  X '
+
+    print('%s got: %s expected: %s' % (prefix, repr(got), repr(expected)))
+
+
+# main() calls the above functions with interesting inputs,
+# using the above test() to check if the result is correct or not.
+def main():
+    print('verbing')
+
+    test(verbing('hail'), 'hailing')
+    test(verbing('swiming'), 'swimingly')
+    test(verbing('do'), 'do')
+
+
+    print ('not_bad')
+    test(not_bad('This movie is not so bad'), 'This movie is good')
+    test(not_bad('This dinner is not that bad!'), 'This dinner is good!')
+    test(not_bad('This tea is not hot'), 'This tea is not hot')
+    test(not_bad("It's bad yet not"), "It's bad yet not")
+
+
+    print ('front_back')
+
+    test(front_back('abcd', 'xy'), 'abxcdy')
+    test(front_back('abcde', 'xyz'), 'abcxydez')
+    test(front_back('Kitten', 'Donut'), 'KitDontenut')
+
+
+if __name__ == '__main__':
+    main()
+    
+    
+output:
+
+verbing
+ OK  got: 'hailing' expected: 'hailing'
+ OK  got: 'swimingly' expected: 'swimingly'
+ OK  got: 'do' expected: 'do'
+not_bad
+ OK  got: 'This movie is good' expected: 'This movie is good'
+ OK  got: 'This dinner is good!' expected: 'This dinner is good!'
+  X  got: None expected: 'This tea is not hot'
+  X  got: None expected: "It's bad yet not"
+front_back
+ OK  got: 'abxcdy' expected: 'abxcdy'
+ OK  got: 'abcxydez' expected: 'abcxydez'
+ OK  got: 'KitDontenut' expected: 'KitDontenut'
+
+
