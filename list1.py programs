@@ -1,0 +1,38 @@
+1. match ends program
+def match_ends(items):
+  count = 0
+
+  for i in items:
+    if len(i) > 1 and i[0] == i[-1]:
+      count += 1
+
+  return count
+
+lst_input = input("Enter items in a string:")
+lst = lst_input.split(" ")
+print(match_ends(lst))
+output:
+Enter items in a string:hema pop sos
+2
+
+
+2.front_x program
+def front_x(item):
+    xl = []
+    el = []
+    for i in item:
+        
+        if i.startswith('x'):
+            
+            xl.append(i)
+        else:
+            el.append(i)
+    return sorted(xl) + sorted(el) 
+
+lst_input = input("Enter items in a string:")
+lst = lst_input.split(" ")
+print(front_x(lst))
+
+output:
+Enter items in a string:hema apple xray xmas
+['xmas', 'xray', 'apple', 'hema']
