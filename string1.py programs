@@ -1,0 +1,37 @@
+1. Donuts program
+def donuts(count):
+    if(count>=10):
+        return "'Number of donuts: many'"
+    else:
+        return " 'Number of donuts:"+" "+ str(count)+"'"
+
+count=int(input("enter the number of donuts:"))
+print(donuts(count))
+
+output:
+enter the number of donuts:5
+ 'Number of donuts: 5'
+
+
+
+
+2.last and first 2 characters in a string
+def both_ends(s):
+    l=len(s)
+    if(l<2):
+        return ' '
+    else:
+        
+        return "'"+s[:2]+s[(l-2):]+"'"
+
+s=input("enter the string:")
+print(both_ends(s))
+output:
+enter the string:hemalatha
+'heha'
+
+
+
+
+
+3.
