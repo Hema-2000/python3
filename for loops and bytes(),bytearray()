@@ -1,0 +1,137 @@
+#loop control statements
+# for
+#range(start,end,step)
+"""
+r=range(50,100,5)
+print(type(r))
+print(r)
+for val in r:
+    print(val)
+output:
+<class 'range'>
+range(50, 100, 5)
+50
+55
+60
+65
+70
+75
+80
+85
+90
+95
+
+b=[10,20,30,40,50]
+byte_var=bytes(b)
+# byte_var[0]=100
+print(type(byte_var))
+print(byte_var)
+
+for var in byte_var:
+    print(var)
+output:<class 'bytes'>
+b'\n\x14\x1e(2'
+10
+20
+30
+40
+50
+
+b=[10,20,30,40,50]
+byte_var=bytearray(b)
+byte_var[0]=100
+print(type(byte_var))
+print(byte_var)
+
+for var in byte_var:
+    print(var)
+output:
+<class 'bytearray'>
+bytearray(b'd\x14\x1e(2')
+100
+20
+30
+40
+50
+
+
+b=[10,20,30,40,50]
+for var in b:
+    print(var)
+
+b=(10,20,30,40,50)
+for var in b:
+    print(var)
+output:
+10
+20
+30
+40
+50
+name="SriSai"
+for var in name:
+    print(var)
+output:
+S
+r
+i
+S
+a
+i
+
+
+b=[10,20,30,40,50,30,20,40,50]
+set_var=set(b)
+print(type(set_var))
+for var in set_var:
+    print(var)
+output:
+<class 'set'>
+40
+10
+50
+20
+30
+b=[10,20,30,40,50,30,20,40,50]
+set_var=frozenset(b)
+print(type(set_var))
+for var in set_var:
+    print(var)
+    
+output:
+<class 'frozenset'>
+40
+10
+50
+20
+30
+
+stuent={1:"Sai", 2:"Ravi",3:"Neelima"}
+print(stuent.keys())
+#print(stuent[2])
+
+for var in stuent.keys():
+    print(stuent[var])
+
+
+output:dict_keys([1, 2, 3])
+Sai
+Ravi
+Neelima
+
+#how to remove duplicate values in a list
+L=[100,200,300,400,200,300,400,500,300]
+s=set(L)
+print(s)
+output:{100, 200, 300, 400, 500}
+"""
+
+
+
+
+
+
+
+
+
+
