@@ -1,0 +1,143 @@
+"""
+r=range(10)
+print(type(r))
+print(r)
+output:
+<class 'range'>
+range(0, 10)
+
+a=[10,20,30,40]
+b=bytes(a)
+print(type(b))
+output:
+<class 'bytes'>
+
+#b[0]=100 #TypeError: 'bytes' object does not support item assignment
+
+a=[10,20,30,40]
+b=bytearray(a)
+print(type(b))
+b[0]=100 #ValueError: byte must be in range(0, 256)
+for i in b:
+    print(i)
+output:
+<class 'bytearray'>
+100
+20
+30
+40
+
+
+l=[11,12,13,11,14,15,11,12]
+print("before logic",l)
+s=set(l)
+l=list(s)
+print("After logic",l)
+output:before logic [11, 12, 13, 11, 14, 15, 11, 12]
+After logic [11, 12, 13, 14, 15]
+
+num=int(input("Enter a number"))
+if num %2 == 0:
+  print("{} is even".format(num))
+else:
+  print("{} is odd".format(num))
+output:Enter a number12
+12 is even
+
+
+
+a=10
+b=10
+print(a==b)
+print(id(a))
+print(id(b))
+print(id(a)==id(b))
+
+a="balaji"
+b="balaji"
+print(id(a)==id(b))
+output:
+True
+1971923780112
+1971923780112
+True
+True
+
+
+rank=int(input("Enter rank"))
+if rank<=1000:
+    print("You got seat in Grade A college")
+elif rank>1000 and rank<=10000:
+    print("You got seat in Grade B college")
+elif rank>10000 and rank<=40000:
+    print("You got seat in Grade C college")
+else:
+    print("Not qualified")
+output:Enter rank10000
+You got seat in Grade B college
+
+
+for num in range(0,10,2):
+    print(num,end=" ")
+
+output:
+0 2 4 6 8
+
+
+name="balaji"
+i=0
+for char in name:
+    print(char,end=" ")
+    i=i+1
+print("length is",i)
+output:b a l a j i length is 6
+
+biodata={"rno":1,"name":"balaji","address":"hyd"}
+print(biodata)
+print("testing")
+print(biodata.items())
+print(biodata.keys())
+print(biodata.values())
+for (k,v) in biodata.items():
+    print(k,":",v)
+
+print("another way")
+for k in biodata.keys():
+    print(k,":",biodata[k])
+
+output:
+{'rno': 1, 'name': 'balaji', 'address': 'hyd'}
+testing
+dict_items([('rno', 1), ('name', 'balaji'), ('address', 'hyd')])
+dict_keys(['rno', 'name', 'address'])
+dict_values([1, 'balaji', 'hyd'])
+rno : 1
+name : balaji
+address : hyd
+another way
+rno : 1
+name : balaji
+address : hyd
+"""
+name="AEIOUaeiou"
+vc=0
+cc=0
+vowels=['a','A','e','E','i','I','o','O','u','U']
+for i in name:
+    if i in vowels:
+        vc+=1
+    else:
+        cc+=1
+
+print("Number of vowels",vc)
+print("Number of consonents",cc)
+ 
+ output:
+Number of vowels 10
+Number of consonents 0
+
+
+    
+
+
+
