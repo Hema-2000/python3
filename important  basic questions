@@ -1,0 +1,11 @@
+1. print no of strings in list which length is greater than or equal to 5
+colours=["red","green","yellow","white","brown"]
+count=0
+for i in colours:
+    if(len(i)>=5):
+        count+=1
+print(count)
+output:
+4
+
+
