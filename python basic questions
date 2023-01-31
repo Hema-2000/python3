@@ -1,0 +1,35 @@
+1. What are the two values of the Boolean data type? How do you write them?
+A. True & False are 2 Boolean data types.
+   first letter in both the types  must be capital letter.
+   
+2. What are the three Boolean operators?
+A.and,or,not are the three Boolean operators
+  logical and boolean operators both are same.
+  
+3.Write out the truth tables of each Boolean operator (that is, every possible combination of Boolean values for the operator and what they evaluate to).
+A.  inputs     and     or 
+    0 0         0      0
+    0 1         0      1
+    1 0         0      1
+    1 1         1      1
+    
+    not --> if we give input as 0 and it provides output as 1
+            if we give input as 1 and it provides output as 0
+            
+            
+4. What do the following expressions evaluate to?
+(5 > 4) and (3 == 5)//False
+not (5 > 4)//False
+(5 > 4) or (3 == 5)//True
+not ((5 > 4) or (3 == 5))//False
+(True and True) and (True == False)//False
+(not False) or (not True)//True
+
+5. What are the six comparison operators?
+A.>(greater than),<(less than),<=(less than or equal to),>=(greater than or equal to),==(equal to),!=(not equal to)
+
+6. What is the difference between the equal to operator and the assignment operator?
+A.equal to operator is used for comparision two operands(it return 1 if True otherwise 0) 
+  assignment operator is used to assign values to variables.(assign right side values to left variables) 
+   
+
