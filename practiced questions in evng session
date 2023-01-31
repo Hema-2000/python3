@@ -1,0 +1,58 @@
+1 to 30 pages are there in a book randomly take some pages ,then in how many takes we reached to 500 pages
+import random
+cnt=0
+s=0
+lis=[]
+while s<=500:
+    num=random.randint(1,30)
+    lis.append(num)
+    s+=num
+    cnt+=1
+print("number of picks to get 500 pages",cnt)
+print(lis)
+print("sum:",s)
+
+output:
+number of picks to get 500 pages 31
+[29, 14, 10, 14, 13, 19, 28, 23, 7, 16, 10, 20, 27, 25, 28, 4, 6, 16, 12, 19, 3, 5, 26, 23, 20, 14, 10, 25, 20, 5, 10]
+sum: 501
+
+
+
+2.Transfer control statements:
+for i in range(5,50,5):
+    if(i%10==0):
+        continue
+    print(i)
+
+j=0
+while True:
+    if(j>10):
+        break
+    print(j)
+    j+=1
+
+
+for i in range(5,50,5):
+    pass
+print("this is out of loop")
+
+
+output:
+5
+15
+25
+35
+45
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+this is out of loop
