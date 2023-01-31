@@ -32,4 +32,60 @@ A.>(greater than),<(less than),<=(less than or equal to),>=(greater than or equa
 A.equal to operator is used for comparision two operands(it return 1 if True otherwise 0) 
   assignment operator is used to assign values to variables.(assign right side values to left variables) 
    
+7.Write code that prints Hello if 1 is stored in spam, prints Howdy if 2 is stored in spam, and prints Greetings! if anything else is stored in spam.
+spam=1
+if(spam==1):
+   print("Hello")
+elif(spam==2):
+   print("Howdy")
+else:
+   print("Greetings")
+   
+   
+8. What keys can you press if your program is stuck in an infinite loop?
+A.ctrl+c
+
+
+9.What is the difference between break and continue?
+A. break: it alters the flow of loop when condition satisfies
+   continue: it skip the statements with in the loop if condition satisfies
+   
+   
+10. What is the difference between range(10), range(0, 10), and range(0, 10, 1) in a for loop?
+A.all are same it provvides 0 to 9
+
+11.Write a short program that prints the numbers 1 to 10 using a for loop. Then write an equivalent program that prints the numbers 1 to 10 using a while loop.
+# for i in range(0,11):
+#     print(i)
+i=0
+while(i<11):
+    print(i)
+    i+=1
+    
+    
+12.If you had a function named bacon() inside a module named spam, how would you call it after importing spam?
+A.spam.bacon()
+
+
+13.what is round() function
+A.it return floating point number that is rounded version of specifies number with specified number of decimals.the default number of decimal is zero.
+print(round(23.6))//24
+# when the (ndigit+1)th digit is =5
+print(round(2.665, 2))//2.67
+
+# when the (ndigit+1)th digit is >=5
+print(round(2.676, 2))//2.68
+
+# when the (ndigit+1)th digit is <5
+print(round(2.673, 2))//2.67
+  
+  
+14.what is abs() function
+A.this function is used to return a absolute value of given num.it takes only one argument
+  that argument may be a int, float and complex num if argument is complex num then it return magnitude of it.
+print(abs(-35))//35
+print(abs(-9.34))//9.34
+print(abs(4-5j))//magnitude(sqrt(a^2+b^2))6.4o3
+
+
 
