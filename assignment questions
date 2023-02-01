@@ -1,0 +1,33 @@
+1.practice problem
+
+dic={"hema":"jan_21","pravi":"sep_15","neeru":"may_5"}
+while(True):
+    s=input("enter the name to check:")
+    keyss= dic.keys()
+    if s in keyss:
+        print(s+"'s"+" birthday is on "+dic.get(s))
+    else:
+        print(s+" is not available in datasheet")
+        print("the birthday datasheet is updated with "+s)
+        dic.setdefault(s,"dec_8")
+        print(dic)
+
+    print("do u want to continue")
+    s1=input("enter Yes or No:")
+    if s1=="Yes":
+        continue
+    else:
+        break
+
+
+output:
+enter the name to check:sam
+sam is not available in datasheet
+the birthday datasheet is updated with sam
+{'hema': 'jan_21', 'pravi': 'sep_15', 'neeru': 'may_5', 'sam': 'dec_8'}
+do u want to continue
+enter Yes or No:Yes
+enter the name to check:hema
+hema's birthday is on jan_21
+do u want to continue
+enter Yes or No:NO
