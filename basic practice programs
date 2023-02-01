@@ -1,0 +1,61 @@
+1. how to remove repeated words in a string
+s="i went to garden , i like flowers"
+lis=s.split()
+print(lis)
+s1=[]
+for i in lis:
+    if(s.count(i)>=1 and i not in s1):
+        s1.append(i)
+print(" ".join(s1))
+
+output:
+['i', 'went', 'to', 'garden', ',', 'i', 'like', 'flowers']
+i went to garden , like flowers
+
+
+pprint module:
+
+# from pprint import pprint
+# students = {"Dilip":["English", "Maths", "Science"],
+#    "Raju":{"English":50,"Maths":60, "Science":70},
+#    "Kalpana":(50,60,70)}
+# # pp = pprint.PrettyPrinter()
+# print (students)
+# print ("pprint output")
+# pprint(students)
+
+
+# import pprint
+# students = {"Dilip":["English", "Maths", "Science"],
+#    "Raju":{"English":50,"Maths":60, "Science":70},
+#    "Kalpana":(50,60,70)}
+# pp = pprint.PrettyPrinter()
+# print (students)
+# print ("pprint output")
+# pp.pprint(students)
+
+#pformate()  using methods and functions
+import pprint
+students = {"Dilip":["English", "Maths", "Science"],
+"Raju":{"English":50,"Maths":60, "Science":70},
+"Kalpana":(50,60,70)}
+print ("using pformat method")
+pp = pprint.PrettyPrinter()
+string = pp.pformat(students)
+print (string)
+print ('------')
+print ("using pformat function")
+string = pprint.pformat(students)
+print (string)
+
+
+output:output is asimilar for both pprint and pformat
+using pformat method
+{'Dilip': ['English', 'Maths', 'Science'],
+ 'Kalpana': (50, 60, 70),
+ 'Raju': {'English': 50, 'Maths': 60, 'Science': 70}}
+------
+using pformat function
+{'Dilip': ['English', 'Maths', 'Science'],
+ 'Kalpana': (50, 60, 70),
+ 'Raju': {'English': 50, 'Maths': 60, 'Science': 70}}
