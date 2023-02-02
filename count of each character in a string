@@ -1,0 +1,37 @@
+# def count_letters(msg):
+#     count_char={}
+#     for i in msg:
+#         if i in count_char:
+#             count_char[i]+=1
+#         else:
+#             count_char[i]=1
+#     return count_char
+# msg='This is Python hands-on Programming and I want to make the most out of it .'
+# res=count_letters(msg)
+# print("count of each char in a string:\n"+str(res))
+
+
+
+# from collections import Counter
+# def count_letters(msg):
+#    r=Counter(msg)
+#    return r
+# msg='This is Python hands-on Programming and I want to make the most out of it .'
+# res=count_letters(msg)
+# print("count of each char in a string:\n"+str(res))
+
+
+# using dict.get()
+def count_letters(msg):
+    count_char={}
+    for i in msg:
+       count_char[i]=count_char.get(i,0)+1
+    return count_char
+msg='This is Python hands-on Programming and I want to make the most out of it .'
+res=count_letters(msg)
+print("count of each char in a string:\n"+str(res))
+
+
+output:
+count of each char in a string:
+{'T': 1, 'h': 4, 'i': 4, 's': 4, ' ': 15, 'P': 2, 'y': 1, 't': 7, 'o': 7, 'n': 6, 'a': 5, 'd': 2, '-': 1, 'r': 2, 'g': 2, 'm': 4, 'I': 1, 'w': 1, 'k': 1, 'e': 2, 'u': 1, 'f': 1, '.': 1}
