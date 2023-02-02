@@ -20,6 +20,31 @@ while(True):
         break
 
 
+                                      ----------using functions----------
+                                      
+                                      
+     
+def present_or_not(dic):
+    while(True):
+        s1=input("enter the name to search:")
+        if s1 in dic:
+            return s1+"'s"+" birthday is on "+dic.get(s1)
+        else:
+            print(s1 + " is not available in datasheet")
+            print("the birthday datasheet is updated with " + s1)
+            dic.setdefault(s1, "dec_8")
+            return dic
+        print("do u want to continue")
+        s1 = input("enter Yes or No:")
+        if s1 == "Yes":
+            continue
+        else:
+            break
+
+
+dic={"hema":"jan21","pravi":"sep15","neeru":"may5"}
+print(present_or_not(dic))
+
 output:
 enter the name to check:sam
 sam is not available in datasheet
