@@ -56,3 +56,33 @@ enter the name to check:hema
 hema's birthday is on jan_21
 do u want to continue
 enter Yes or No:NO
+
+
+
+#check value is present or not:
+
+
+def present_or_not(dic):
+    lis=[]
+    itemss=dic.items()
+    print(itemss)
+    while(True):
+        s=input("enter the value to search")
+        for i in itemss:
+            if(i[1]==s):
+                lis.append(i[0])
+        return (lis)
+            # else:
+            #     return ("your entered value is not present in the dic:")
+
+        print("do u want to continue")
+        s1 = input("enter Yes or No:")
+        if s1 == "Yes":
+            continue
+        else:
+            break
+
+
+dic={"hema":"jan21","pravi":"may5","neeru":"may5"}
+print(present_or_not(dic))
+
