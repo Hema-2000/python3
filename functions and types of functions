@@ -1,0 +1,33 @@
+#passing multiple values to a function(variable len arguments)
+# def sum(*args):
+#     s=0
+#     print(type(args))
+#     for x in args:
+#         s+=x
+#     return s
+    
+# res=sum(1,2,3,4,5)
+# print("addition:",res)
+
+
+
+# def string(name,msg):
+#     print("Hello {} {}".format(name,msg))
+# string("hema","goodmorning")
+# string("goodmorning","hema")
+# print("---keyword arguments---")
+# string(msg="goodmorning",name="hema")
+
+#default value
+# def sum(a=0,b=0,c=0,d=0):
+#     s=a+b+c+d
+#     return s
+# print(sum(1,4,5))
+
+#variable lengt with keyword arguments
+# def fun(**args):
+#     for i,j in args.items():
+#         print("keys",i,"value",j)
+# fun(a=10,b=20,c=30,name="hema")
+
+
