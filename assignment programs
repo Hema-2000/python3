@@ -1,0 +1,14 @@
+1. check phone number is valid or not
+
+def validate(inp):
+    if len(inp)!=14 and inp[:4]!="+91-" and inp[0]==0:
+        return "phone number not valid"
+    for i in range(4,14):
+        if not inp[i].isdecimal() :
+            pass
+        return "phone number not valid"
+    return "phone number valid"
+inp=input("enter the phone num:")
+print(validate(inp))
+
+
