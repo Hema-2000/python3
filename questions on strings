@@ -1,0 +1,91 @@
+1. What are escape characters?
+A.
+\n --> 	The new line character helps the programmer to insert a new line before or after a string.	
+txt = “Guru\n99!”
+print(txt)	
+output:
+Guru
+99
+\\ -->	This escape sequence allows the programmer to insert a backslash into the Python output.	
+txt = “Guru\\99!”
+print(txt)	
+output:Guru\99!
+\xhh--> 	Use a backslash followed by a hexadecimal number.
+This is done by printing in backslash with the hexadecimal equivalent in double quotes.	
+txt = “\x47\x75\x72\x75” + “99!”
+print(txt)	
+output:Guru99!
+\ooo -->	To get the integer value of an octal value, provide a backslash followed by ooo or octal number in double-quotes.
+It is done by printing in a backslash with three octal equivalents in double quotes.	
+txt = ‘\107\125\122\125’+ “99!”
+print(txt)	
+output:GURU99!
+\b -->	This escape sequence provides backspace to the Python string. It is inserted by adding a backslash followed by “b”.
+“b” here represents backslash.
+txt = “Guru\b99!”
+print(txt)	
+output:Gur99!
+\f -->	It helps in the interpolation of literal strings	(interpolation:used to estimate unknown data point from known data points)
+txt = “Guru\f99!”
+print(txt)	
+output:Guru99!
+\r -->	It helps you to create a raw string	
+txt = “Guru\r99!”
+print(txt)	
+output:99!
+\’ -->	It helps you to add a single quotation to string	
+txt = “Guru\’99!”
+print(txt)	
+output:Guru’99!
+
+
+2. What do the \n and \t escape characters represent?
+\n --> 	The new line character helps the programmer to insert a new line before or after a string.	
+txt = “Guru\n99!”
+print(txt)	
+output:
+Guru
+99
+\t --> it helps the programmer to create tab space between 2 strings
+txt = “Guru\t99!”
+print(txt)	
+output:Guru	99!
+
+3. How can you put a \ backslash character in a string?
+A. using "//" we can put backslash
+
+4. The string value "Howl's Moving Castle" is a valid string. Why isn’t it a problem that the single quote character in the word Howl's isn’t escaped?
+A.yes it is possible because for starting and ending of a string is denoted within double quotes.
+
+5. If you don’t want to put \n in your string, how can you write a string with newlines in it?
+A. By using another print statement  then automatically python print that statement into new line.
+
+6. What do the following expressions evaluate to?
+
+'Hello, world!'[1]  #e
+'Hello, world!'[0:5] #Hello
+'Hello, world!'[:5] #Hello
+'Hello, world!'[3:] #lo, world!
+
+
+7. What do the following expressions evaluate to?
+
+'Hello'.upper() #HELLO
+'Hello'.upper().isupper() #True
+'Hello'.upper().lower() #hello
+
+8. What do the following expressions evaluate to?
+
+'Remember, remember, the fifth of November.'.split() #['Remember,', 'remember,', 'the', 'fifth', 'of', 'November.']
+'-'.join('There can be only one.'.split()) #There-can-be-only-one.
+
+
+9. What string methods can you use to right-justify, left-justify, and center a string?
+A. rjust()
+   ljust()
+   center()
+   
+10. How can you trim whitespace characters from the beginning or end of a string?
+A. by using .strip() method
+
+
