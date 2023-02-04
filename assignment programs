@@ -12,3 +12,17 @@ inp=input("enter the phone num:")
 print(validate(inp))
 
 
+2.reverse a string
+def reverse(str1):
+    s1=" "
+    s2=" "
+    s1= str1[:4]
+    s2=str1[4:]
+    s2=s2[::-1]
+    return s1+s2
+
+str1="abcdefghijk"
+res=reverse(str1)
+print(res)
+
+
