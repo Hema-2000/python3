@@ -1,0 +1,45 @@
+1. phone num is valid or not
+import re
+def validate(inp):
+    pattern=re.compile(r'^\+91-\d{10}$')
+    return pattern.match(inp)
+inp=input("enter the phone num:")
+if validate(inp):
+    print("phone num is valid")
+else:
+    print("phone num is invalid")
+
+
+
+
+2.extract numbers from string:
+import re
+def extract_num(data):
+    num=re.findall(r'\d\d',data)
+
+    return num
+data="my born date was 21-01-20 and now my age is 23 yraes old"
+if extract_num(data):
+    print(extract_num(data))
+else:
+    print("no match")
+
+
+
+3. check if the entered date is in  dd/sss/dddd i.e 06/JAN/2020
+print statements accordingly 
+import re
+def dob(data):
+   matchobj=re.match(r'\d\d/[A-Z]{3}/\d{4}',data)
+   return matchobj
+data=input("enter the string")
+if dob(data):
+    print(dob(data))
+else:
+    print("no match")
+    
+    
+    
+    
+ 4.
+
