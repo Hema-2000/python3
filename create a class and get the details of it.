@@ -1,0 +1,22 @@
+class Student:
+    def __init__(self):
+        self.id="16435"
+        self.name="hemalatha"
+        self.marks="45.3"
+    def display(self):
+        print("student id num:",self.id)
+        print("student name:",self.name)
+        print("student marks:",self.marks)
+s1=Student()
+s2=Student()
+s1.display()
+s2.display()
+
+
+output:
+student id num: 16435
+student name: hemalatha
+student marks: 45.3
+student id num: 16435
+student name: hemalatha
+student marks: 45.3
