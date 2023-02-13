@@ -1,0 +1,84 @@
+1. remove empty strings in a list of strings:
+def remove_emptystr(lis):
+    for i in lis:
+        if(len(i)==0):
+            lis.remove(i)
+    print(lis)
+
+lis=["","hema","latha","","engineer"]
+remove_emptystr(lis)
+output:
+['hema', 'latha', 'engineer']
+
+
+
+2.iterate 2 lists simultaneously:
+def iterate_sim(l1,l2):
+
+    for i in range(len(l1)):
+       print(l1[i],l2[i])
+l1=["hema:","latha:","sailu:","priya:"]
+l2=[1,2,3,4]
+iterate_sim(l1,l2)
+
+output:
+hema: 1
+latha: 2
+sailu: 3
+priya: 4
+
+
+another method using zip:
+def iterate_sim(l1,l2):
+
+    for i,j in zip(l1,l2):
+       print(i,j)
+l1=["hema","latha","sailu","priya"]
+l2=[1,2,3,4]
+iterate_sim(l1,l2)
+
+-->if both list lengths are not same then we can use like "itertools.zip_longest
+
+
+
+3.concatenate 2 lists in given order:
+def iterate_sim(l1,l2):
+    for i in l2:
+        l1.append(i)
+    print(l1)
+
+l1=["hema","latha","sailu","priya"]
+l2=[1,2,3,4]
+iterate_sim(l1,l2)
+
+output:
+['hema:', 'latha:', 'sailu:', 'priya:', 1, 2, 3, 4]
+
+
+
+
+
+4.square each element in a list:
+def squa(lis):
+    ret = []
+    for i in lis:
+        ret.append(i ** 2)
+    return ret
+l1=[1,2,3,4,5]
+print(squa(l1))
+
+output:
+[1, 4, 9, 16, 25]
+
+
+5.reverse a list 
+def rev(lis):
+    ret=[]
+    for i in lis:
+        ret.insert(0,i)
+    return ret
+l1=[1,2,3,4,5]
+print(rev(l1))
+
+output:
+[5, 4, 3, 2, 1]
