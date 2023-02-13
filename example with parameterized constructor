@@ -1,0 +1,23 @@
+class student:
+    def __init__(self,x,y,z):
+        self.name=x
+        self.roll_no=y
+        self.marks=z
+    def display(self):
+        print("student name:",self.name)
+        print("student roll no.:",self.roll_no)
+        print("student marks:",self.marks)
+s1=student("hema",45,9.5)
+s2=student("pravi",47,9.7)
+s1.display()
+s2.display()
+
+
+
+output:
+student name: hema
+student roll no.: 45
+student marks: 9.5
+student name: pravi
+student roll no.: 47
+student marks: 9.7
