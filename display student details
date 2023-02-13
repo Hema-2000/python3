@@ -1,0 +1,50 @@
+1. without constructor
+
+class student:
+    def getdata(self):
+        self.name=input("enter the name of student:")
+        self.roll_no=int(input("enter the roll no. of student:"))
+        self.marks=float(input("enter the marks of student:"))
+    def display(self):
+        print("student name:",self.name)
+        print("student roll no.:",self.roll_no)
+        print("student marks:",self.marks)
+s1=student()
+s2=student()
+s1.getdata()
+s1.display()
+s2.getdata()
+s2.display()
+
+output:
+enter the name of student:hema
+enter the roll no. of student:34
+enter the marks of student:7.8
+student name: hema
+student roll no.: 34
+student marks: 7.8
+enter the name of student:pravi
+enter the roll no. of student:45
+enter the marks of student:4.6
+student name: pravi
+student roll no.: 45
+student marks: 4.6
+
+
+
+2.without methods
+
+class student:
+    def __init__(self,x,y,z):
+        self.name=x
+        self.roll_no=y
+        self.marks=z
+
+s1=student("hema",45,8.9)
+s2=student("pravi",46,9.8)
+print(s1.__dict__)
+print(s2.__dict__)
+
+output:
+{'name': 'hema', 'roll_no': 45, 'marks': 8.9}
+{'name': 'pravi', 'roll_no': 46, 'marks': 9.8}
